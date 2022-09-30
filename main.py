@@ -168,12 +168,12 @@ while True:
         print(
             f'Destination orbital velocity: {destination_orbital_velocity:.2f} km/2 ({utils.kmps_to_ms(destination_orbital_velocity):.2f} m/s)')
 
-        # calculate the probes flight time from the total static distance to the destination and the probes's acceleration then display it
-        probe_flight_time = utils.time_from_distance_and_speed(
-            destination_total_distance_km, craft_acceleration)
-        print(f'Probe flight time: {probe_flight_time:.2f} seconds')
+        # # calculate the probes flight time from the total static distance to the destination and the probes's acceleration then display it
+        # probe_flight_time = utils.time_from_distance_and_speed(
+        #     destination_total_distance_km, craft_acceleration)
+        # print(f'Probe flight time: {probe_flight_time:.2f} seconds')
 
-        # probe_flight_time = total_travel_time
+        probe_flight_time = total_travel_time
 
         # calculate the destination's distance travelled in kilometres and display it
         destination_km_travelled = destination_orbital_velocity * probe_flight_time
